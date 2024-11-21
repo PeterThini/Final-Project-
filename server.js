@@ -16,7 +16,7 @@ const port = 4500;
 app.use(bodyParser.json());
 
 // Test the database connection using sequelize.authenticate()
-sequelize.authenticate()  // This should now work 
+sequelize.authenticate()  
   .then(() => {
     console.log('Database connected successfully');
   })

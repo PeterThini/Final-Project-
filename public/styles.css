@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 /* Body and Overall Styling */
 body {
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #2c2222;
     background-color: #f9f9f9;
     padding: 0;
     margin: 0;
@@ -18,7 +18,7 @@ body {
 
 /* Header and Navigation */
 header {
-    background: #4CAF50;
+    background: #066e09;
     color: #fff;
     padding: 1rem 2rem;
 }
@@ -62,18 +62,18 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 3rem 2rem;
-    background: linear-gradient(to bottom, #4CAF50, #8BC34A);
+    background: linear-gradient(to bottom, #e3e7e3, #ac4959);
     color: #fff;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .hero .cta-button {
@@ -173,6 +173,12 @@ nav ul li a:hover {
     color: #555;
 }
 
+.More {
+text-align: left;
+color: black;
+background-color: #e3e7e3;
+}
+
 /* Weather Dashboard */
 #weather-dashboard {
     background: #fff;
@@ -257,7 +263,7 @@ form button:hover {
 
 /* Footer */
 footer {
-    background: #4CAF50;
+    background: #410f0f;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
