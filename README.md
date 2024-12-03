@@ -45,8 +45,9 @@ Agriculture is the backbone of Kenya's economy, contributing significantly to th
 ## Technologies Used
 
 - HTML5 for structuring content.
-- CSS3 for styling the user interface.
+- CSS for styling the user interface.
 - JavaScript for dynamic content and interactivity.
+- Mysql integration for the backend data collection
 
 
 ## Acknowledgements 
@@ -56,5 +57,16 @@ Agriculture is the backbone of Kenya's economy, contributing significantly to th
 Future improvements 
 Interactive website with great feature
 Better styling is needed
-More active website with location and real time features
-To include Videos and python aspects 
+A more active website with location and real-time features
+To include Videos and Python aspects 
+Create more versatile Admin privileges
+To have a more interactive website with an accessibility feature
+Reduce wording and replace it with visuals
+Include links to useful sites
+Include a portion for real-time market news and prospects
+Include a button to support groups like WhatsApp channels & Telegram groups and Discord
+I think we can include a USSD feature!
+A feature on all animal and agriculture laws applicable in Kenya.
+There is a need to use more improved features and technologies
+I believe for a beginner the website exceeds amateur skills. 
+
