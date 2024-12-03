@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS -->
+</head>
+<body>
+    <div class="form-container">
+        <h1>Farmer Registration</h1>
+        <form id="registrationForm" onsubmit="return validateRegistrationForm()">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter your phone number">
+            
+            <label for="county">County</label>
+            <select id="county" name="county" onchange="populateSubCounties()" required>
+                <option value="" disabled selected>Select your county</option>
+                <option value="Baringo">Baringo</option>
+                <option value="Bomet">Bomet</option>
+                <option value="Bungoma">Bungoma</option>
+                <option value="Busia">Busia</option>
+                <option value="Elgeyo-Marakwet">Elgeyo-Marakwet</option>
+                <option value="Embu">Embu</option>
+                <option value="Garissa">Garissa</option>
+                <option value="Homa Bay">Homa Bay</option>
+                <option value="Isiolo">Isiolo</option>
+                <option value="Kajiado">Kajiado</option>
+                <option value="Kakamega">Kakamega</option>
+                <option value="Kericho">Kericho</option>
+                <option value="Kiambu">Kiambu</option>
+                <option value="Kilifi">Kilifi</option>
+                <option value="Kirinyaga">Kirinyaga</option>
+                <option value="Kisii">Kisii</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Kitui">Kitui</option>
+                <option value="Kwale">Kwale</option>
+                <option value="Laikipia">Laikipia</option>
+                <option value="Lamu">Lamu</option>
+                <option value="Machakos">Machakos</option>
+                <option value="Makueni">Makueni</option>
+                <option value="Mandera">Mandera</option>
+                <option value="Marsabit">Marsabit</option>
+                <option value="Meru">Meru</option>
+                <option value="Migori">Migori</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Murang'a">Murang'a</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Nandi">Nandi</option>
+                <option value="Narok">Narok</option>
+                <option value="Nyamira">Nyamira</option>
+                <option value="Nyandarua">Nyandarua</option>
+                <option value="Nyeri">Nyeri</option>
+                <option value="Samburu">Samburu</option>
+                <option value="Siaya">Siaya</option>
+                <option value="Taita-Taveta">Taita-Taveta</option>
+                <option value="Tana River">Tana River</option>
+                <option value="Tharaka-Nithi">Tharaka-Nithi</option>
+                <option value="Trans-Nzoia">Trans-Nzoia</option>
+                <option value="Turkana">Turkana</option>
+                <option value="Uasin Gishu">Uasin Gishu</option>
+                <option value="Vihiga">Vihiga</option>
+                <option value="Wajir">Wajir</option>
+                <option value="West Pokot">West Pokot</option>
+            </select>
+            
+           
+        
+                    <label for="subcounty">Subcounty:</label>
+                    <select id="subcounty" name="subcounty">
+                        <option value="" selected disabled>Select Subcounty</option>
+                    </select>
+            </select>
+            
+            
+        
+            
+            <label for="acres">Acres for Farming</label>
+            <input type="number" id="acres" name="acres" min="0.1" step="0.1" required placeholder="Enter number of acres">
+            
+            <label for="crops">Crops You Grow</label>
+            <input type="text" id="crops" name="crops" required placeholder="Enter crops you grow">
+            
+        <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="/login.html">Login here</a></p>
+    </div>
+  
+    <script src="scripts.js"></script> 
+</body>
+</html>

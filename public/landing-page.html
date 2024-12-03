@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect - Empowering Farmers in Kenya</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/script.js"></script>
+  
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Lima smart, Lima Faida</h1>
+                <p>Connecting Farmers with Agri-Economy</p>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Background">Background</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#weather-dashboard">Weather Dashboard</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    </section>
+    
+    <!-- Homepage Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to AgriConnect</h2>
+        <p>Your Partner in Agricultural Success</p>
+        <a href="#services" class="cta-button">Explore Our Services</a>
+    </section>
+
+ <!-- Background Section -->
+ <section id="Background">
+    <h2>Background</h2>
+    
+        <h3><strong>Prioritizing Agriculture in Kenya: A Path to Sustainable Development
+        </strong></h3>
+        <br> 
+        
+        <p>
+        Agriculture is the backbone of Kenya's economy, <strong> contributing approximately 30% of the GDP and employing nearly 40% of the total population.</strong>
+         In the 2024 Global Hunger Index, Kenya ranks 100th out of the 127 countries with sufficient data to calculate 2024 GHI scores. 
+         <strong>With a score of 25.0 in the 2024 Global Hunger Index, Kenya has a level of hunger that is serious.</strong>
+        <br>
+        <div class="image1">
+            <img src="Hunger Index-Kenya.png" alt="Njaa Kenya" style="width: 500px; height: 500px;" class="Image 1">
+        </div>
+        However, challenges such as erratic weather patterns, declining soil fertility, lack of acess to affordable and quality fertilizer and limited access to modern farming technology threaten its potential. 
+        Prioritizing agriculture is critical to ensure food security, drive economic growth, and achieve sustainable development. 
+        
+        Smart agriculture offers a transformative solution by leveraging technology and data to optimize farming practices. Tools such as precision farming and weather forecasting can help farmers adapt 
+        to climate change by selecting crops suitable for shifting weather patterns. Access to certified, drought-resistant, and high-yield seed varieties ensures productivity, even in unpredictable conditions. Investment in modern irrigation systems and agroforestry can further enhance water efficiency and environmental sustainability.
+        <br>
+        <h4 class="agriculture-sdgs">
+            By prioritizing agriculture, Kenya addresses multiple Sustainable Development Goals (SDGs), including: <br> 
+            ✓ SDG 1 (No Poverty) by creating income generating opportunities.  <br>
+            ✓ SDG 2 (Zero Hunger) through improved food production and security.  <br>
+            ✓ SDG 8 (Decent Work and Economic Growth) by bolstering the agro-economy. <br>  
+            ✓ SDG 12 (Responsible Consumption and Production) via sustainable farming practices and recycling.  <br>
+            ✓ SDG 13 (Climate Action) by promoting climate smart agricultural strategies. <br>
+        </h4>
+        More Resources: <br>
+        <a href="https://eos.com/blog/weather-in-agriculture/">https://eos.com/blog/weather-in-agriculture/</a> <br>
+        <a href="Seed info">https://www.greenlife.co.ke/planting-season-guide/</a><br>
+        <a href="Seed">https://www.greenlife.co.ke/expert-guide-to-maize-farming-in-kenya/</a>
+        
+    </p>
+</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>AgriConnect is a platform dedicated to helping farmers by providing them with real-time information on seeds, weather patterns, market prices, and rainfall expectations. Our goal is to empower farmers with the resources they need to make informed decisions and succeed in their agricultural ventures.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Seed Information</h3>
+            <p>Browse through our database of seeds to find detailed information on yield, seasonality, and recommended growing conditions.</p>
+        </div>
+        <div class="service">
+            <h3>Weather Patterns</h3>
+            <p>Stay updated with the latest weather patterns and forecasts, including temperature, humidity, and precipitation predictions.</p>
+        </div>
+        <div class="service">
+            <h3>Rainfall Expectations</h3>
+            <p>Access our rainfall expectation models to make more precise planting and harvesting decisions.</p>
+        </div>
+        <div class="service">
+            <h3>Market Prices</h3>
+            <p>Get real-time data on the latest market prices for various crops, ensuring that you are always informed of current trends.</p>
+        </div>
+    </section>
+
+    <!-- Weather Dashboard Section -->
+    <section id="weather-dashboard">
+        <h2>Weather Dashboard</h2>
+        <p>Explore real-time weather data to help you make well-informed decisions on crop management.</p>
+
+        <!-- Example Weather Dashboard Widgets -->
+        <div class="dashboard-widget">
+            <h3>Current Weather</h3>
+            <div id="weather-dashboard">
+                <!-- <h2>Current Weather</h2>
+                <p>Location: <span id="location">Loading...</span></p>
+                <p>Temperature: <span id="temperature">Loading...</span> °C</p>
+                <p>Humidity: <span id="humidity">Loading...</span> %</p>
+                <p>Wind Speed: <span id="wind-speed">Loading...</span> m/s</p> -->
+            </div>
+            
+            <div>
+                <h2 id="location"></h2>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="wind-speed"></span></p>
+                <p>Rainfall: <span id="rainfall"></span></p>
+                <p>Forecast: <span id="forecast-data"></span></p>
+            </div>
+            
+
+
+            <script>
+                async function fetchWeather() {
+                    try {
+                        const response = await fetch('/weather');
+                        const data = await response.json();
+            
+                        document.getElementById('location').textContent = data.location;
+                        document.getElementById('temperature').textContent = data.temperature;
+                        document.getElementById('humidity').textContent = data.humidity;
+                        document.getElementById('wind-speed').textContent = data.windSpeed;
+                    } catch (error) {
+                        console.error('Error fetching weather data:', error);
+                    }
+                }
+            
+                fetchWeather();
+            </script>
+            
+            <a href="https://openweathermap.org/api">Check weather here by entering your location</a>
+        </div>
+
+        <div class="dashboard-widget">
+            <h3>Rainfall Forecast</h3>
+            <div id="rainfall-forecast">
+                <!-- Placeholder for dynamic rainfall data -->
+                <p>Expected Rainfall: [Dynamic Data] mm</p>
+                <p>Forecast for Next 7 Days: [Dynamic Data]</p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <h3>Seasonal Outlook</h3>
+            <div id="seasonal-outlook">
+                <p>Temperature Trends: [Dynamic Data]</p>
+                <p>Rainfall Trends: [Dynamic Data]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+  
+
+
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Investing in agriculture is not just a pathway to prosperity but a foundational step toward a resilient and equitable Kenya. 
+            <br>A concerted focus on this sector will ensure a sustainable future for all citizens.
+        </p>
+        <p>&copy; 2024 AgriConnect. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

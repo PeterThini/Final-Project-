@@ -1,0 +1,372 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Overall Styling */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header and Navigation */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+}
+
+header .logo p {
+    font-size: 0.9rem;
+    margin-top: -5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(to bottom, #4CAF50, #8BC34A);
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .cta-button {
+    text-decoration: none;
+    background: #ffeb3b;
+    color: #4CAF50;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero .cta-button:hover {
+    background: #fbc02d;
+}
+
+/* About Section */
+#about {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*Background section */
+#Background {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+   
+}
+
+#background h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+   
+}
+
+.agriculture-sdgs {
+    background-color: #f4f8f5; /* Light greenish background for emphasis */
+    color: #2c662d; /* Dark green text for alignment with the agriculture theme */
+    padding: 20px; /* Add some space around the text */
+    border-left: 5px solid #2c662d; /* A decorative green border on the left */
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    line-height: 1.8; /* Improved readability with spaced lines */
+    text-align: left;
+}
+
+
+
+/* Services Section */
+#services {
+    background: #e8f5e9;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service {
+    margin: 1rem auto;
+    max-width: 600px;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4CAF50;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Weather Dashboard */
+#weather-dashboard {
+    background: #fff;
+    padding: 3rem 2rem;
+}
+
+#weather-dashboard h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-widget {
+    background: #f1f8e9;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-widget h3 {
+    color: #4CAF50;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-widget p {
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    background: #5c0505;
+    padding: 1rem;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: .5rem;
+    background: #160101;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #0c7fcc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.8rem 2rem;
+    border: none;
+    background: #310601;
+    color: #07010c;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #388E3C;
+}
+
+/* Footer */
+footer {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer .social-links li {
+    margin: 0 10px;
+}
+
+footer .social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer .social-links li a:hover {
+    color: #ffeb3b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .service, .dashboard-widget {
+        padding: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#weather-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#weather-dashboard h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+#current-weather, #forecast {
+    margin-top: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+strong {
+    color: #333;
+}
