@@ -126,7 +126,7 @@ nav ul li a:hover {
     color: #2c662d; /* Dark green text for alignment with the agriculture theme */
     padding: 20px; /* Add some space around the text */
     border-left: 5px solid #2c662d; /* A decorative green border on the left */
-    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Clean, readable font */
     line-height: 1.8; /* Improved readability with spaced lines */
     text-align: left;
 }
