@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif
+    
 }
 
 /* Body and Overall Styling */
@@ -16,7 +17,7 @@ body {
     margin: 0;
 }
 
-/* styles.css */
+
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -35,35 +36,38 @@ body {
     width: 250px;
     background-color: #f4f4f4;
     padding: 15px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0 5px rgba(161, 9, 9, 0.1);
     position: fixed;
-    height: 100%;
+    height: 150%;
     overflow-y: auto;
 }
 
 .sidebar h2 {
     font-size: 1.5em;
     margin-bottom: 1em;
+    
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
+    color: #007bff;
 }
 
 .sidebar ul li {
     margin-bottom: 10px;
+    color: #007bff;
 }
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #333;
+    color: #0d0442;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .sidebar ul li a:hover {
-    color: #007bff;
+    color: #0a4604;
 }
 
 .content {

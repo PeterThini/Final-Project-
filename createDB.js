@@ -42,7 +42,7 @@ connection.query(createDatabase, (err, results) => {
         username VARCHAR(255) UNIQUE NOT NULL,
         email VARCHAR(255) UNIQUE NOT NULL,
         password VARCHAR(255) NOT NULL,
-        isAdmin BOOLEAN DEFAULT FALSE,  -- Add this line
+        isAdmin BOOLEAN DEFAULT FALSE,  
         createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       );

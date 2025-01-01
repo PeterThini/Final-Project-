@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # Check if .sequelizerc file exists in the current directory
 if [ -f ".sequelizerc" ]; then
